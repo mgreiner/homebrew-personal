@@ -24,4 +24,15 @@ brew install <formula-name>
 
 ## Available Formulas
 
-Coming soon!
+### booklet-reorder
+
+Convert scanned saddle-stitched booklet PDFs into properly ordered pages for duplex printing.
+
+```bash
+brew install booklet-reorder
+```
+
+Usage:
+```bash
+booklet-reorder input.pdf output.pdf
+```

@@ -15,8 +15,8 @@ class BookletReorder < Formula
   end
 
   resource "pymupdf" do
-    url "https://files.pythonhosted.org/packages/source/p/pymupdf/pymupdf-1.24.14.tar.gz"
-    sha256 "dbd0e42b0cc3b8846f37ca96dd47d3df69f0df08a4e3b8cc1a0835c0d96b5f93"
+    url "https://files.pythonhosted.org/packages/8d/9a/e0a4e92a85fc17be7c54afdbb113f0ade2a8bca49856d510e28bd249e462/pymupdf-1.26.5.tar.gz"
+    sha256 "8ef335e07f648492df240f2247854d0e7c0467afb9c4dc2376ec30978ec158c3"
   end
 
   resource "pillow" do

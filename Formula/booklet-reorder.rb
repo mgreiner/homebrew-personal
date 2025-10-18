@@ -3,8 +3,8 @@ class BookletReorder < Formula
 
   desc "Convert scanned saddle-stitched booklet PDFs into properly ordered pages"
   homepage "https://github.com/mgreiner/booklet-reorder"
-  url "https://github.com/mgreiner/booklet-reorder/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "31b3544aa33d823a78ff8cc7d6f5ec6527492794c9441a127cc599d5fe3a251c"
+  url "https://github.com/mgreiner/booklet-reorder/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "2fdf8dff449799dab28ba22825702f31e3040e92cdb1e01e540bae74fd544f94"
   license "MIT"
 
   depends_on "python@3.12"
@@ -21,11 +21,11 @@ class BookletReorder < Formula
     # Install PyPDF2 from source (pure Python, no compilation needed)
     venv.pip_install resource("pypdf2")
 
-    # Install Pillow and PyMuPDF from binary wheels (have native code)
+    # Install packages with native code from binary wheels
     # Call pip directly from the virtualenv to allow binary wheels
     system libexec/"bin/python", "-m", "pip", "install",
            "--only-binary=:all:",
-           "Pillow>=10.0.0", "PyMuPDF>=1.23.0"
+           "Pillow>=10.0.0", "PyMuPDF>=1.23.0", "opencv-python>=4.8.0", "numpy>=1.24.0"
 
     # Install the main package
     venv.pip_install_and_link buildpath

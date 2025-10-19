@@ -3,8 +3,8 @@ class BookletReorder < Formula
 
   desc "Convert scanned saddle-stitched booklet PDFs into properly ordered pages"
   homepage "https://github.com/mgreiner/booklet-reorder"
-  url "https://github.com/mgreiner/booklet-reorder/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "2fdf8dff449799dab28ba22825702f31e3040e92cdb1e01e540bae74fd544f94"
+  url "https://github.com/mgreiner/booklet-reorder/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "04995bb20d235dbf2e4671c49179472281b655630921eba9ca557573497698f6"
   license "MIT"
 
   depends_on "python@3.12"

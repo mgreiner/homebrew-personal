@@ -3,7 +3,6 @@ class UpdateFstabUuid < Formula
   homepage "https://github.com/mgreiner/update-fstab-uuid"
   url "https://github.com/mgreiner/update-fstab-uuid/archive/refs/heads/main.tar.gz"
   version "1.0.0"
-  sha256 :no_check
 
   def install
     # Install the main script
